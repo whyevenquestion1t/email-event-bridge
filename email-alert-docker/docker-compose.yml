@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/email_app
+
+    ports:
+      - 80:80
+    command: python main.py
